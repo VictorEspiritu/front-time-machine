@@ -1,0 +1,17 @@
+.product{
+    background-color: darkgray;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.product span{
+    color: aliceblue;
+}
+
+.bk-green{
+    background-color: forestgreen;
+}
+
+.bk-red{
+    background-color: crimson;
+}
