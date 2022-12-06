@@ -58,7 +58,7 @@ function SliderTrailers(params) {
             <div className="videos">
                 <Slider className="slider-for-2 video-ft" {...settings1} ref={(slider) => (slider1 = slider)}>
                     {videosNow.map((video, v) => (
-                        <div>
+                        <div key={'thcsv-' + v}>
                             <iframe className="item-video" src={video.url} title={video.title}></iframe>
                         </div>
                     ))}

@@ -1,4 +1,5 @@
 import { listItems } from "../data/ListItems"
+import ItemsSlide from "./ItemsSlide"
 
 function ItemsPageSlide() {
     
@@ -7,7 +8,7 @@ function ItemsPageSlide() {
             <div className="row">
                 <div className="col-md-12">
                     {listItems.map((item, i) => (
-                            <ItemsPageSlide item={item} key={'mirc-'+i}></ItemsPageSlide>
+                            <ItemsSlide item={item} key={'mirc-'+i}></ItemsSlide>
                     ))}
                 </div>
             </div>

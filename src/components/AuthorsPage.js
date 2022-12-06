@@ -156,7 +156,7 @@ function AuthorPage() {
                             </div>
                             <div className="sb-facebook sb-it">
                                 <h4 className="sb-title">Find us on Facebook</h4>
-                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=340&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" height="315" style={{width:'100%',border:'none',overflow:'hidden'}} ></iframe>
+                                <div>Facebook...</div>
                             </div>
                             <div className="sb-twitter sb-it">
                                 <h4 className="sb-title">Tweet to us</h4>
