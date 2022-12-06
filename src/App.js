@@ -1,13 +1,20 @@
-import AuthorForm from "./components/admin/AuthorForm";
-import AuthorList from "./components/admin/AuthorList";
+import HomePage from "./components/HomePage"
+import { Route, Routes } from "react-router-dom"
+import LayoutPage from "./components/LayoutPage"
+import AuthorPage from "./components/AuthorsPage"
+import NotFoundPage from "./components/NotFoundPage"
+
 
 function App() {
 
     return (
-            <>
-                <AuthorForm/>
-                <AuthorList/>
-            </>
+        <Routes>
+            <Route path="/" element={<LayoutPage />}>
+                <Route index element={<HomePage />}></Route>
+                <Route path="/authors" element={<AuthorPage />}></Route>
+            </Route>
+            <Route path="*" element={<NotFoundPage />}></Route>
+        </Routes>
     )
 }
 

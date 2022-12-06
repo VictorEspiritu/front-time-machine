@@ -1,16 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { AuthorContextProvider } from './contexts/AuthorContext';
+import React from "react";
+import App from "./App"
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <AuthorContextProvider>
-        <App/>
-    </AuthorContextProvider>
+    <BrowserRouter>
+        <App></App>
+    </BrowserRouter>
 )
-reportWebVitals();
- 
